@@ -1,35 +1,21 @@
-import styles from './styles.module.scss'
-import Link from 'next/link'
-
-function AppBar (props){
-    return(
-            <nav className={styles.light}>
+import { Brand } from "../brand" 
+import {Bar} from "./styles"
+ 
+import {UserLoginStatus } from "../authentication/login-status"
+ 
+ function AppBar(props) {
+    return (
+        <Bar>
             <ul>
+                <li><Brand font="14px" letter="16px" logo="20px" /></li>
+               
                 <li>
-                    <Link href="/">
-                    <a>{props.brand}</a>
-                    </Link>
-                    
+                  <UserLoginStatus/>
                 </li>
-                <li>
-                    <Link href="/login">
-                    <a>{props.company}</a>
-                    </Link>
-                    
-                    
-                </li>
-                <li>
-                    <Link href="/signup">
-                    <a>{props.loginOption}</a>
-                    </Link>
-                    
-                </li>
-            </ul>
-            </nav>
-       
-        
-    )
 
+            </ul>
+        </Bar>
+    )
 }
 
 export default AppBar

@@ -1,16 +1,17 @@
-import styles from './styles.module.scss'
-import Logo from '../logo'
+import Link from 'next/link'
+import Logo from '../icons/logo/logo'
+import {BrandStyles} from "./styles"
 
-function Brand({tagline, title}){
-    return(
-        <div className={styles.brand}>
-            <header>
-            <Logo/>
-                <h1>{title}</h1>
-               
-                <p>{tagline}</p>
-            </header>
-        </div>
-    )
+
+function Brand ({...props}){
+  return(
+    <Link href="/">
+    <BrandStyles {...props}>
+      <Logo {...props}/>
+      <figcaption><h2>2doolyst</h2></figcaption>
+    </BrandStyles>
+    </Link>
+  )
 }
+
 export default Brand

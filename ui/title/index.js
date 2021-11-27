@@ -1,0 +1,1 @@
+export {Title, TagLine} from './styles'
