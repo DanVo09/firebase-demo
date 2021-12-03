@@ -5,6 +5,7 @@ import Spacer from "../ui/spacers/Spacer"
 import { UserLogin } from "../components/authentication/user-login"
 import { Legal, HighLight } from "../ui/legal"
 import { PageLayout, PageHeader, PageFooter, PageBody } from "../layouts/loginpage"
+import GitHubProvider from "../components/authentication/providers/github/GitHubProvider"
 function index (){
     
     return(
@@ -16,6 +17,7 @@ function index (){
                     </PageHeader>
                <PageBody>
                    <GoogleProvider>With Google</GoogleProvider>
+                   <GitHubProvider>With Github</GitHubProvider>
                    <Spacer>OR</Spacer>
                    <UserLogin/>
                 </PageBody>             
