@@ -17,7 +17,7 @@ function UserLogin ({...props}){
         e.preventDefault();
         const isUser = await signInWithEmailAndPassword(auth, email, password)
         if(isUser){
-            router.push('/todo')
+            router.push('/add-item')
         }
     }
  

@@ -1,1 +1,1 @@
-export {HomePageLayout, HomePageHeader, HomePageBody} from './styles'
+export {HomePageLayout, HomePageHeader, HomePageBody, LinksContainer} from './styles'

@@ -25,7 +25,7 @@ function GoogleProvider({ children,  ...props }) {
     }
 
     if(isValidUser){
-      router.push('/todo')
+      router.push('/add-item')
     }
  
 

@@ -1,29 +1,36 @@
+   
 import Link from 'next/link'
 import { Title } from '../ui/title'
-
+import { Brand } from '../components/brand'
 import { Button } from '../ui/buttons'
-
-import { HomePageLayout, HomePageHeader, HomePageBody } from '../layouts/homepage'
+import { HomePageLayout, HomePageHeader, HomePageBody, LinksContainer } from '../layouts/homepage'
+import { PageLayout } from '../layouts/loginpage'
 
 function home(){
 return(
     
-    <HomePageLayout>
-        <HomePageHeader>
-            <Title>Home Page</Title>
-        </HomePageHeader>
-        <HomePageBody>
-            <Link href="/login">
-                <Button bgcolor="red" color="white">Log in</Button>
-            </Link>
-           <Link href="/signup">
-                <Button bgcolor="red" color="white">Sign Up</Button>
-           </Link>
-            
-        </HomePageBody>
-        
+  <>
 
-    </HomePageLayout>
+  <HomePageHeader>
+    <Brand className="brand" width="148" size="5rem"   display="column"  /> 
+         
+
+      <p>Official task management tool for tools</p>
+      <LinksContainer>
+      <Link   href="/signup">
+          <Button bgcolor="#0fa9ec" color="#ffffff">New user account setup</Button>
+     </Link>
+      <Link href="/login">
+        <Button bgcolor="#0071e3" color="white">Current user account login</Button>
+      </Link>
+     </LinksContainer>
+         <ul>              
+           <li>No Credit Card Required</li>
+           <li>Upgrade your account at anytime</li>
+         </ul>
+  </HomePageHeader>
+  
+ </>
        
 )
 }

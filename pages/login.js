@@ -6,7 +6,7 @@ import { UserLogin } from "../components/authentication/user-login"
 import { Legal, HighLight } from "../ui/legal"
 import { PageLayout, PageHeader, PageFooter, PageBody } from "../layouts/loginpage"
 import GitHubProvider from "../components/authentication/providers/github/GitHubProvider"
-function index (){
+function loginpage (){
     
     return(
         <>
@@ -32,4 +32,4 @@ function index (){
 
  
 
-export default index
+export default loginpage

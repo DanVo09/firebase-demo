@@ -17,8 +17,23 @@ const HomePageLayout = styled.div`
 `
 
 const HomePageHeader = styled.header`
-      padding: 2rem 0;
-      text-align:center;
+text-align: center;
+color:#222b37;
+p{
+  margin:0.5rem;
+
+}
+.brand{
+  margin-top:2rem;
+   h1{
+     margin-bottom: -2rem;
+   }
+}
+li{
+  color:#646f79;
+      font-weight: 200;
+      font-size: 1.5rem;
+    }
 `
 
 
@@ -29,9 +44,22 @@ const HomePageBody = styled.main`
     
 `
 
+const LinksContainer = styled.div`
+ max-width: 320px;
+margin: 2rem auto;
+display:flex;
+flex-direction: column;
+justify-content: center;
+button{
+  margin-bottom: 1rem;
+  font-size:1.125rem;
+}
+  
+`;
+
  
  
 
-export {HomePageLayout, HomePageHeader, HomePageBody }
+export {HomePageLayout, HomePageHeader, HomePageBody, LinksContainer }
 
  
