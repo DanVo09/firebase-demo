@@ -1,6 +1,5 @@
    
 import Link from 'next/link'
-import { Title } from '../ui/title'
 import { Button } from '../ui/buttons'
 import { HomePageLayout, HomePageHeader, HomePageBody, LinksContainer } from '../layouts/homepage'
 import { PageLayout } from '../layouts/loginpage'
