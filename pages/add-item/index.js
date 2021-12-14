@@ -10,12 +10,13 @@ import { AddNewItem, ItemID, AddItem, ItemDescription } from "./styles";
 import AppBar from "../../components/appbar/appbar";
 import { Brand } from "../../components/brand";
 import { Button } from "../../ui/buttons";
+import { TagLine } from "../../ui/text";
 
  
 function AddNewItempage({...props}) {
   const user = useAuth()
  const [id, setId] = useState("")
- const [description, setDescription] = useState('')
+ const [description, setdescription] = useState('')
 
  useState(()=>{
    setId(uuid().substring(0,8))
@@ -55,10 +56,12 @@ console.log(toDo)
           </ItemID>
           <ItemDescription style={{margin:"1rem 0 1.5rem"}} >
             <label htmlFor="description">Description</label>
-            <textarea onChange={(e)=> setDescription(e.currentTarget.value)}  rows="3" cols="4" name="description" id="description"></textarea>
+            <textarea onChange={(e)=> setdescription(e.currentTarget.value)}  rows="3" cols="4" name="description" id="description"></textarea>
           </ItemDescription>
-          <Button style={{margin:"1rem 0"}} bgcolor="crimson" color="white">Add a new to do item</Button>
+          <Button style={{margin:"1rem 0"}} bgcolor="crimson" color="white">Add a new to do item </Button>
         </AddItem>
+        <TagLine>Id: {id}</TagLine>
+        <TagLine>Description: {description}</TagLine>
        </AddNewItem>
     </>
   );

@@ -6,12 +6,16 @@ const AddNewItem = styled.aside`
    margin: 2rem 1rem;
    padding:1rem;
    header{
-       margin-bottom: 2rem;
+       margin: 2rem auto;
+       width: 320px;
+
    }
-   h2{
-       font-size:2.5rem;
+
+   h1{
+       font-size:2rem;
        font-weight: 600;
        letter-spacing: -2px;
+       text-align: center;
    }
    textarea{
        resize: none;
